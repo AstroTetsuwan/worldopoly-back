@@ -1,0 +1,19 @@
+{
+  "name": "worldopoly-back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AstroTetsuwan/worldopoly-back.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AstroTetsuwan/worldopoly-back/issues"
+  },
+  "homepage": "https://github.com/AstroTetsuwan/worldopoly-back#readme"
+}
