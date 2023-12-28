@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "deploy": "firebase deploy --only hosting,functions"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/AstroTetsuwan/worldopoly-back#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "firebase": "^10.7.1",
+    "firebase-admin": "^12.0.0"
   }
 }
