@@ -4,4 +4,5 @@
 env.config.js
 *.log
 /firebase-service-account
+/exported-dev-data
 ```

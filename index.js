@@ -9,10 +9,8 @@ import { getAnalytics } from "firebase/analytics";
 
 import config from './env.config';
 
-const firebaseConfig = config.firebaseConfig;
-
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+const app = initializeApp(config.firebaseConfig);
 const analytics = getAnalytics(app);
 
 const expressApp = require('./functions');

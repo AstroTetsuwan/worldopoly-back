@@ -3,6 +3,10 @@ const express = require("express");
 const cors = require("cors");
 
 const apiRouter = require("./api/router");
+const appService = require("./api/src/services/core/app");
+
+
+appService.init();
 
 const app = express();
 app.use(cors());

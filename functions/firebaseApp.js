@@ -1,9 +1,13 @@
 var admin = require("firebase-admin");
-var serviceAccount = require("./firebase-service-account/worldopoly-bbd9e-firebase-adminsdk-bx5fm-4302cbbf9d.json");
+const config = require("./config");
 const firebaseApp = admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://worldopoly-bbd9e-default-rtdb.europe-west1.firebasedatabase.app"
+  credential: admin.credential.cert(config.FIREBASE_SERVICE_ACCOUNT),
+  databaseURL: config.FIREBASE_DATABASE_URL
 })
 
+const database = firebaseApp.database();
 
-module.exports = firebaseApp;
+module.exports = {
+  firebaseApp,
+  database
+};
